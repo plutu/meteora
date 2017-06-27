@@ -1,0 +1,15 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block content %}
+
+<p> Your payoff is {{ p.payoff }}</p>
+
+    {% next_button %}
+{% endblock %}
+
+

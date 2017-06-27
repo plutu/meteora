@@ -1,0 +1,19 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block content %}
+
+    <h4>Instructions</h4>
+    <p>
+        choose a platform!
+    </p>
+
+    {% formfield player.platform_selection with label="I choose:" %}
+
+    <p> Your payoff: {{ player_payoff }} </p>
+
+    <button id="ajaxButton" type="button">Button 1</button>
+
+    {% next_button %}
+
+{% endblock %}
